@@ -1,0 +1,12 @@
+string=input("Bir string giriniz:")
+sözlük={}
+
+for harf in string:
+    if harf in sözlük:
+        sözlük[harf]+=1
+
+    else:
+        list(sözlük).append(harf)
+        sözlük[harf]=1
+
+print(sözlük)
